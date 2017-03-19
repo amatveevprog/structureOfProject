@@ -5,6 +5,7 @@ import getMiddlewares from './middlewares';
 import getRoutes from './routes';
 
 
+
 export default class App
 {
     constructor(config)

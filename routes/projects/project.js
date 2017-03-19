@@ -1,6 +1,7 @@
 /**
  * Created by Bonya on 14.03.2017.
  */
+/*
 
 
 const ProjectExists = require('./config/connect').ProjectExists;
@@ -35,4 +36,4 @@ function processProjectQuery(item,callback)
                 next();
             }
         }
-    });
+    });*/

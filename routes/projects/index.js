@@ -4,6 +4,7 @@
 /*exports.hello = function () {
     return 'hello world';
 };*/
+const api = require('../../lib/api');
 const projectProcessing = require('./project').default;
 export default function(ctx) {
     const app = ctx.asyncRouter;

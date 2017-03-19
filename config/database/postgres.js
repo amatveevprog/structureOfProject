@@ -1,4 +1,4 @@
-export default {
+module.exports.poolConfig = {
     user: 'julssdeyrmquae', //env var: PGUSER
     database: 'd1jkjsthsndv4p', //env var: PGDATABASE
     password: '5563484458a1e2134da73a6d0428d04332085b717fe5b23c0d3cae5a917486a1', //env var: PGPASSWORD
