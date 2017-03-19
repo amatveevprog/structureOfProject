@@ -8,9 +8,9 @@
  */
 import fs from 'fs';
 import path from 'path';
+//api connecting
 
-
-export default function getRoutes(ctx){
+export default function getRoutes(ctx,api){
     const routesRaw = fs.readdirSync('./routes').map((item)=>{
         return path.resolve('./routes',item);
     });
@@ -24,6 +24,6 @@ export default function getRoutes(ctx){
     }
     //получаем роуты для всего приложения
     dirArray.forEach((item)=>{
-        let row = require(item).default(ctx);
+        let row = require(item).default(ctx,api);
     });
 };

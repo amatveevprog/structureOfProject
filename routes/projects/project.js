@@ -1,6 +1,33 @@
 /**
  * Created by Bonya on 14.03.2017.
  */
+
+import async from 'async';
+
+/*export default class ProjectRoute
+{
+    constructor(api)
+}
+export default async function (req,res,next) {
+    //обработка роута
+
+}*/
+
+module.exports.run = (api,callback)=>
+{
+   /* return new Promise((resolve,reject)=>{
+        const data = {
+            entity:'project',
+            operation:'get',
+            para
+        }
+        api
+    });*/
+};
+
+
+
+
 /*
 
 
