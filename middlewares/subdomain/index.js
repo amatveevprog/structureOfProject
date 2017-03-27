@@ -35,4 +35,4 @@ module.exports = function (options) {
         // Q.E.D.
         next()
     }
-}
+};

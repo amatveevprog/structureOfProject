@@ -8,7 +8,7 @@
 //располагаем все мидлвары в правильном порядке!
 const middlewares = [
     {
-        middleware:require('./subdomain'),
+        middleware:require('./subdomain/index'),
         options:null
     }
 ];

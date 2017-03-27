@@ -1,6 +1,56 @@
 /**
  * Created by Bonya on 14.03.2017.
  */
+//TODO добавлеие функционала для обработки роутов
+import async from 'async';
+
+
+/*export default class ProjectRoute
+{
+    constructor(api)
+}
+export default async function (req,res,next) {
+    //обработка роута
+
+}*/
+//обработка роута...
+export default async (apiInstance,projectName)=>{
+    return new Promise((resolve,reject)=>{
+        apiInstance.run({entity:'projects',operation:'getProjects'},[],(error,result)=>{
+            if(error) {
+                console.log("ERROR!!!");
+                reject(error);
+            }
+
+            else
+            {
+                cnsole.log(`s0me result: ${result}`);
+                resolve(result);
+            }
+        });
+    });
+}
+const run=(api,callback)=>{
+    const data = {
+        entity:api,
+        operation:'get'
+    }
+}
+/*module.exports.run = (api,callback)=>
+{
+   /!* return new Promise((resolve,reject)=>{
+        const data = {
+            entity:'project',
+            operation:'get',
+            para
+        }
+        api
+    });*!/
+};*/
+
+
+
+
 /*
 
 
