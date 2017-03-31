@@ -29,8 +29,10 @@ export default function(ctx,api) {
         //promisification
     });*/
    app.get('/_sub/:project',async (req,res,next)=>{
-       let data_1 = await projectProcessing(api,req.params.project);
+       let data_1 = projectProcessing(api,req.params.project);
        return data_1;
+       //return {a:1,b:2};
+       //return projectProcessing(api,req.params)
    });
 }
 

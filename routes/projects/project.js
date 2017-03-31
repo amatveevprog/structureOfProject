@@ -17,25 +17,26 @@ export default async function (req,res,next) {
 export default async (apiInstance,projectName)=>{
     return new Promise((resolve,reject)=>{
         apiInstance.run({entity:'projects',operation:'getProjects'},[],(error,result)=>{
+        //run({entity:'projects',operation:'getProjects'},(error,result)=>{
             if(error) {
                 console.log("ERROR!!!");
                 reject(error);
             }
-
             else
             {
-                cnsole.log(`s0me result: ${result}`);
+                console.log(`s0me result: ${result}`);
                 resolve(result);
             }
         });
     });
 }
 const run=(api,callback)=>{
-    const data = {
-        entity:api,
+    /*const data = {
+        entity:'api',
         operation:'get'
-    }
-}
+    };*/
+    callback(null,api);
+};
 /*module.exports.run = (api,callback)=>
 {
    /!* return new Promise((resolve,reject)=>{
